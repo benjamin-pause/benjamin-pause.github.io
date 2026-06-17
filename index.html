@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Pausé – Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#accueil" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Benjamin<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#stages">Stage</a>
+        <a href="#veille">Veille</a>
+        <a href="#formations">Formations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#stages">Stage</a>
+      <a href="#veille">Veille</a>
+      <a href="#formations">Formations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="accueil">
+    <div class="hero-content">
+      <p class="hero-eyebrow">BTS SIO · Option SISR · Lycée Pierre Poivre</p>
+      <h1 class="hero-title">
+        Bonjour, je suis<br />
+        <span class="hero-name">Benjamin Pausé</span>
+      </h1>
+      <p class="hero-subtitle">
+        Passionné par les réseaux, la cybersécurité et l'infrastructure système.<br />
+        Basé au Tampon, La Réunion 🌋
+      </p>
+      <div class="hero-cta">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">bash — benjamin@rlcom</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">benjamin@rlcom:~$</span> <span class="t-cmd" id="typeTarget"></span><span class="t-cursor">|</span></p>
+          <p class="t-output" id="termOutput"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── À PROPOS ── -->
+  <section class="section" id="apropos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — Qui suis-je ?</span>
+        <h2>À propos de moi</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="2"/><path d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="2"/></svg>
+            <p>Ajoute ta photo ici</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-intro">
+            Étudiant en 2ème année de BTS SIO option SISR au Lycée Pierre Poivre, je suis
+            passionné par l'administration système, les réseaux et la cybersécurité.
+          </p>
+          <p>
+            Durant mon stage chez <strong>RLCom</strong>, j'ai eu l'opportunité de déployer des infrastructures
+            réelles : migration de serveurs Ubuntu, mise en place d'une stack SIEM complète avec
+            Wazuh et Elastic Stack sous Docker, et configuration de matériel réseau professionnel.
+          </p>
+          <p>
+            Curieux et autonome, je me forme en continu via OpenClassrooms et je pratique sur des
+            environnements virtuels. Mon objectif : intégrer un poste en alternance ou en entreprise
+            dans les domaines de l'infrastructure, de la sécurité ou de l'administration système.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Réseaux TCP/IP</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Wazuh / SIEM</span>
+            <span class="tag">Elastic Stack</span>
+            <span class="tag">Virtualisation</span>
+            <span class="tag">Cybersécurité</span>
+            <span class="tag">NAS / RAID</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMPÉTENCES ── -->
+  <section class="section section-alt" id="competences">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Ce que je sais faire</span>
+        <h2>Compétences</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Réseaux</h3>
+          <ul>
+            <li>TCP/IP, IPv4/IPv6, routage</li>
+            <li>Cisco Packet Tracer</li>
+            <li>Wireshark – analyse de trafic</li>
+            <li>Firewall, UFW, ACL</li>
+            <li>DNS, NAT, Netplan</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🖥️</div>
+          <h3>Systèmes</h3>
+          <ul>
+            <li>Linux Ubuntu (18.04 → 22.04)</li>
+            <li>Windows 10/11</li>
+            <li>Administration SSH</li>
+            <li>Migration OS en production</li>
+            <li>Gestion de services systemd</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🐳</div>
+          <h3>Docker & Conteneurs</h3>
+          <ul>
+            <li>Docker Compose</li>
+            <li>Déploiement multi-services</li>
+            <li>Elastic Stack complet</li>
+            <li>OpenSearch Stack</li>
+            <li>Gestion volumes & réseaux</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔐</div>
+          <h3>Cybersécurité / SIEM</h3>
+          <ul>
+            <li>Wazuh (Manager, Indexer, Dashboard)</li>
+            <li>Elastic Stack + Fleet Server</li>
+            <li>Déploiement agents (Mac, Win, Linux)</li>
+            <li>Certificats SSL auto-signés (OpenSSL)</li>
+            <li>FIM, détection brute-force</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">☁️</div>
+          <h3>Virtualisation & Infra</h3>
+          <ul>
+            <li>VirtualBox</li>
+            <li>NAS QNAP – RAID 5</li>
+            <li>Configuration SSD cache</li>
+            <li>Gestion stockage 12 To</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Développement & Web</h3>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>Python (Spyder)</li>
+            <li>Java (IntelliJ IDEA)</li>
+            <li>Langage C</li>
+            <li>WordPress</li>
+            <li>Bash / PowerShell</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🌍</div>
+          <h3>Langues</h3>
+          <ul>
+            <li>Français – Langue maternelle</li>
+            <li>Anglais – Niveau B2</li>
+            <li>Espagnol – Niveau A2</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">💬</div>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Autonomie & apprentissage rapide</li>
+            <li>Rigueur et organisation</li>
+            <li>Travail en équipe</li>
+            <li>Rédaction de documentation technique</li>
+            <li>Adaptabilité internationale</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJETS ── -->
+  <section class="section" id="projets">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Réalisations</span>
+        <h2>Mes Projets</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-tag">SIEM · Cybersécurité</div>
+          <h3>Déploiement Elastic Stack avec Fleet Server</h3>
+          <p>Mise en place complète d'une stack Elastic (Elasticsearch, Kibana, Fleet Server, Logstash, Filebeat, Metricbeat, Auditbeat) via Docker Compose avec HTTPS et certificats auto-signés. Déploiement d'agents sur Mac, Linux et Windows.</p>
+          <div class="project-stack">
+            <span>Docker</span><span>Elasticsearch</span><span>Kibana</span><span>Fleet</span><span>OpenSSL</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Système · Linux</div>
+          <h3>Migration Ubuntu 18.04 → 22.04 en production</h3>
+          <p>Migration complète d'un serveur Wazuh en production via SSH, avec gestion du routage réseau, correction Netplan, utilisation de screen pour sécuriser la session. Wazuh Manager opérationnel sans réinstallation après migration.</p>
+          <div class="project-stack">
+            <span>Ubuntu</span><span>SSH</span><span>Netplan</span><span>Wazuh</span><span>screen</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">SIEM · Sécurité</div>
+          <h3>Infrastructure Wazuh sécurisée</h3>
+          <p>Installation et sécurisation complète d'un serveur Wazuh : changement des ports par défaut (1514→10010, 1515→10011), configuration UFW, mot de passe d'enrôlement, déploiement d'agents macOS, Windows et Linux.</p>
+          <div class="project-stack">
+            <span>Wazuh</span><span>UFW</span><span>macOS</span><span>Windows</span><span>Linux</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Stockage · Infra</div>
+          <h3>Installation NAS QNAP & RAID 5</h3>
+          <p>Montage physique et configuration d'un NAS QNAP TS-h1277AXU-RP. Mise en place d'un RAID 5 sur 5 disques de 12 To (capacité totale utilisable ~48 To), configuration du cache SSD pour optimisation des performances.</p>
+          <div class="project-stack">
+            <span>QNAP</span><span>RAID 5</span><span>SSD Cache</span><span>QuTS hero</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Réseau · Simulation</div>
+          <h3>Maquette réseau – Cisco Packet Tracer</h3>
+          <p>Conception et configuration d'une infrastructure réseau complète avec VLAN, routage inter-VLAN et pare-feu dans le cadre des cours BTS SIO SISR.</p>
+          <div class="project-stack">
+            <span>Cisco</span><span>VLAN</span><span>Routage</span><span>Packet Tracer</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Comparatif · DevOps</div>
+          <h3>Elastic Stack vs OpenSearch – Comparaison</h3>
+          <p>Déploiement de deux stacks indépendantes (Elastic Stack et OpenSearch) sur le même serveur Docker avec réseaux et ports dédiés. Étude comparative des fonctionnalités dans un contexte SOC/SIEM.</p>
+          <div class="project-stack">
+            <span>Docker</span><span>OpenSearch</span><span>Elastic</span><span>Kibana</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STAGE ── -->
+  <section class="section section-alt" id="stages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Expérience professionnelle</span>
+        <h2>Stage – RLCom</h2>
+      </div>
+      <div class="stages-list">
+
+        <div class="stage-item">
+          <div class="stage-date">
+            <span class="stage-year">2026</span>
+            <span class="stage-duration">5 semaines</span>
+          </div>
+          <div class="stage-body">
+            <div class="stage-header-row">
+              <h3>Technicien Systèmes & Réseaux</h3>
+              <span class="stage-badge">Terminé</span>
+            </div>
+            <p class="stage-company">🏢 RLCom — La Réunion · 02/06/2026 → 03/07/2026</p>
+            <p>Stage en entreprise de réseaux et sécurité informatique. Participation active à des projets d'infrastructure réels : migration de serveurs, déploiement de solutions SIEM, installation de matériel réseau professionnel.</p>
+
+            <h4 class="stage-missions-title">Missions réalisées</h4>
+            <div class="stage-missions">
+
+              <div class="mission-block">
+                <div class="mission-icon">🐧</div>
+                <div>
+                  <strong>Migration Ubuntu 18.04 → 22.04</strong>
+                  <p>Migration en production via SSH d'un serveur Wazuh. Gestion du routage réseau, correction Netplan, session screen. Zéro interruption de service.</p>
+                </div>
+              </div>
+
+              <div class="mission-block">
+                <div class="mission-icon">🔍</div>
+                <div>
+                  <strong>Déploiement Wazuh SIEM</strong>
+                  <p>Installation et sécurisation complète : Manager, Indexer, Dashboard. Changement des ports par défaut, UFW, authd.pass, agents Mac/Windows/Linux.</p>
+                </div>
+              </div>
+
+              <div class="mission-block">
+                <div class="mission-icon">🐳</div>
+                <div>
+                  <strong>Elastic Stack sous Docker</strong>
+                  <p>Déploiement via Docker Compose : Elasticsearch, Kibana, Fleet Server HTTPS, Logstash, Filebeat, Metricbeat, Auditbeat. Certificats SSL auto-signés.</p>
+                </div>
+              </div>
+
+              <div class="mission-block">
+                <div class="mission-icon">🖥️</div>
+                <div>
+                  <strong>Installation NAS QNAP</strong>
+                  <p>Montage physique de 5 disques 12 To, configuration RAID 5 (~48 To utiles), cache SSD, mise à jour firmware QuTS hero.</p>
+                </div>
+              </div>
+
+              <div class="mission-block">
+                <div class="mission-icon">📊</div>
+                <div>
+                  <strong>Elastic vs OpenSearch</strong>
+                  <p>Déploiement comparatif de deux stacks SIEM indépendantes sur Docker pour évaluation fonctionnelle en contexte SOC.</p>
+                </div>
+              </div>
+
+              <div class="mission-block">
+                <div class="mission-icon">👥</div>
+                <div>
+                  <strong>Réunions d'équipe & documentation</strong>
+                  <p>Participation aux réunions techniques, rédaction de procédures et comptes rendus d'intervention (clients : Groupe Océane, Movilac, ZEOP).</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="stage-tasks">
+              <span>Docker</span><span>Wazuh</span><span>Elastic Stack</span><span>Ubuntu Server</span>
+              <span>SSH</span><span>QNAP RAID 5</span><span>OpenSSL</span><span>UFW</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tableau de synthèse -->
+      <div class="synthese">
+        <h3 class="synthese-title">📋 Tableau de synthèse des compétences</h3>
+        <div class="table-wrapper">
+          <table class="synthese-table">
+            <thead>
+              <tr>
+                <th>Compétence</th>
+                <th>Activité réalisée</th>
+                <th>Contexte</th>
+                <th>Niveau</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Administration Linux</td>
+                <td>Migration Ubuntu 18.04 → 22.04 en SSH</td>
+                <td>Stage RLCom</td>
+                <td><span class="niveau niveau--3">★★★</span></td>
+              </tr>
+              <tr>
+                <td>Conteneurisation</td>
+                <td>Déploiement Elastic Stack via Docker Compose</td>
+                <td>Stage RLCom</td>
+                <td><span class="niveau niveau--3">★★★</span></td>
+              </tr>
+              <tr>
+                <td>Cybersécurité / SIEM</td>
+                <td>Installation et sécurisation Wazuh complet</td>
+                <td>Stage RLCom</td>
+                <td><span class="niveau niveau--3">★★★</span></td>
+              </tr>
+              <tr>
+                <td>Stockage & RAID</td>
+                <td>NAS QNAP – RAID 5 sur 5 disques 12 To</td>
+                <td>Stage RLCom</td>
+                <td><span class="niveau niveau--2">★★☆</span></td>
+              </tr>
+              <tr>
+                <td>Réseaux TCP/IP</td>
+                <td>Correction routage Netplan, configuration UFW</td>
+                <td>Stage RLCom</td>
+                <td><span class="niveau niveau--3">★★★</span></td>
+              </tr>
+              <tr>
+                <td>Simulation réseau</td>
+                <td>Maquette VLAN / routage Cisco Packet Tracer</td>
+                <td>BTS SIO SISR</td>
+                <td><span class="niveau niveau--2">★★☆</span></td>
+              </tr>
+              <tr>
+                <td>Scripting</td>
+                <td>Scripts Bash & PowerShell pour agents Wazuh/Elastic</td>
+                <td>Stage RLCom</td>
+                <td><span class="niveau niveau--2">★★☆</span></td>
+              </tr>
+              <tr>
+                <td>Documentation</td>
+                <td>Rédaction procédures, comptes rendus d'intervention</td>
+                <td>Stage RLCom</td>
+                <td><span class="niveau niveau--3">★★★</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── VEILLE TECHNOLOGIQUE ── -->
+  <section class="section" id="veille">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Veille technologique</span>
+        <h2>Ma veille techno</h2>
+      </div>
+      <p class="veille-intro">
+        Dans le domaine de l'IT, rester à jour est essentiel. Je suis régulièrement l'actualité
+        cybersécurité, systèmes et infrastructure à travers plusieurs sources.
+      </p>
+      <div class="veille-grid">
+
+        <div class="veille-card">
+          <div class="veille-icon">🛡️</div>
+          <h3>Cybersécurité</h3>
+          <p>Suivi des CVE, nouvelles menaces, ransomwares et vulnérabilités zero-day. Intérêt particulier pour les solutions SIEM et SOC.</p>
+          <div class="veille-sources">
+            <span>The Hacker News</span>
+            <span>Cert-FR</span>
+            <span>ANSSI</span>
+          </div>
+        </div>
+
+        <div class="veille-card">
+          <div class="veille-icon">🐧</div>
+          <h3>Linux & Open Source</h3>
+          <p>Actualités des distributions Linux, mises à jour kernel, nouveautés des outils open source utilisés en administration système.</p>
+          <div class="veille-sources">
+            <span>LinuxFR</span>
+            <span>Reddit r/linux</span>
+            <span>DistroWatch</span>
+          </div>
+        </div>
+
+        <div class="veille-card">
+          <div class="veille-icon">🐳</div>
+          <h3>Docker & DevOps</h3>
+          <p>Nouvelles versions Docker, bonnes pratiques de conteneurisation, orchestration et Infrastructure as Code.</p>
+          <div class="veille-sources">
+            <span>Docker Blog</span>
+            <span>Dev.to</span>
+            <span>GitHub Trending</span>
+          </div>
+        </div>
+
+        <div class="veille-card">
+          <div class="veille-icon">🤖</div>
+          <h3>Intelligence Artificielle</h3>
+          <p>Suivi des avancées IA appliquées à la cybersécurité et à l'administration système. Formation OpenClassrooms en cours (87%).</p>
+          <div class="veille-sources">
+            <span>OpenClassrooms</span>
+            <span>Hugging Face</span>
+            <span>MIT News</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="veille-article">
+        <h3>📰 Sujet récent – Elastic Stack 8.x & Fleet Server HTTPS</h3>
+        <p>
+          Durant mon stage chez RLCom, j'ai été confronté à un bug de Fleet Server sur la version 8.11.1 d'Elastic.
+          La mise à jour vers la version 8.12.2 a résolu le problème. Ce type d'incident m'a sensibilisé
+          à l'importance de suivre les <em>release notes</em> et les forums officiels Elastic avant tout déploiement en production.
+        </p>
+        <div class="veille-tags">
+          <span>Elastic 8.12.2</span><span>Fleet Server</span><span>Bug fix</span><span>Production</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FORMATIONS ── -->
+  <section class="section section-alt" id="formations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Parcours</span>
+        <h2>Formations & CV</h2>
+      </div>
+      <div class="cv-grid">
+        <div class="cv-col">
+          <h3 class="cv-col-title">🎓 Formation scolaire</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2024 – 2026</span>
+                <h4>BTS SIO – Option SISR</h4>
+                <p>Lycée Pierre Poivre – La Réunion</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2025</span>
+                <h4>Baccalauréat STMG – Gestion Finance</h4>
+                <p>Lycée Bois Joly Potier – Mention obtenue</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2026</span>
+                <h4>Voyage industriel – Allemagne</h4>
+                <p>Découverte VOITH & ZEISS – Groupes multinationaux</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cv-col">
+          <h3 class="cv-col-title">📜 Formations en ligne – OpenClassrooms</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot tl-dot--alt"></div>
+              <div class="tl-content">
+                <span class="tl-date">2025 ✅</span>
+                <h4>Bases du langage Python</h4>
+                <p>OpenClassrooms – Cours terminé</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot tl-dot--alt"></div>
+              <div class="tl-content">
+                <span class="tl-date">2026 ✅</span>
+                <h4>Apprendre à programmer en C</h4>
+                <p>OpenClassrooms – Cours terminé</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot tl-dot--alt"></div>
+              <div class="tl-content">
+                <span class="tl-date">2026 ✅</span>
+                <h4>HTML & CSS accessible</h4>
+                <p>OpenClassrooms – Cours terminé</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot tl-dot--alt"></div>
+              <div class="tl-content">
+                <span class="tl-date">2026 ✅</span>
+                <h4>Initiation à l'Intelligence Artificielle</h4>
+                <p>OpenClassrooms – Cours terminé</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cv-download">
+        <a href="assets/CV_Benjamin_Pause.pdf" class="btn btn-primary" download>⬇ Télécharger mon CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 — Me joindre</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Tu veux en savoir plus sur mon parcours, proposer une collaboration ou simplement échanger sur l'IT ? N'hésite pas !</p>
+          <ul class="contact-links">
+            <li>
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:pause.swan@gmail.com">pause.swan@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">📞</span>
+              <a href="tel:+262692590280">06 92 59 02 80</a>
+            </li>
+            <li>
+              <span class="contact-icon">💼</span>
+              <a href="https://linkedin.com" target="_blank">LinkedIn – Benjamin Pausé</a>
+            </li>
+            <li>
+              <span class="contact-icon">📍</span>
+              <span>8 Chemin du Portail, Le Tampon – La Réunion</span>
+            </li>
+            <li>
+              <span class="contact-icon">🚗</span>
+              <span>Permis B – Véhicule personnel</span>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Votre message…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <p class="form-note">💡 Le formulaire sera actif une fois le site en ligne (Formspree).</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 · Benjamin Pausé · BTS SIO SISR · Lycée Pierre Poivre · La Réunion 🌋</p>
+      <p class="footer-sub">Portfolio v1.0 – mis à jour en juin 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
